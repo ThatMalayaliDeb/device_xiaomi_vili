@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The CherishOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,13 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vili device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-# Inherit some common xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
-# Inherit some xtended build stuff.
+#Inherit Pixel Launcher Extended
+$(call inherit-product, vendor/PixelLauncherExtended/PixelLauncher.mk)
+
+# Inherit some Cherish build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_MAINTAINER := ChampionsGod
 WITH_GAPPS=true
 PROCESSOR_MODEL := sm8350
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -29,7 +30,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := xtended_vili
+PRODUCT_NAME := pixys_vili
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

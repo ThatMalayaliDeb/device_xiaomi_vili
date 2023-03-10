@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_vili.mk
+    $(LOCAL_DIR)/pixys_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_vili-user \
-    xtended_vili-userdebug \
-    xtended_vili-eng
+    pixys_vili-user \
+    pixys_vili-userdebug \
+    pixys_vili-eng
