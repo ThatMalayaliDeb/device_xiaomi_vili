@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_vili.mk
+    $(LOCAL_DIR)/cherish_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_vili-user \
-    xtended_vili-userdebug \
-    xtended_vili-eng
+    cherish_vili-user \
+    cherish_vili-userdebug \
+    cherish_vili-eng

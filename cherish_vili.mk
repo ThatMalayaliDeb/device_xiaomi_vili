@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The CherishOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,13 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vili device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-# Inherit some common xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-# Inherit some xtended build stuff.
+# Inherit some Cherish build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_MAINTAINER := ChampionsGod
 WITH_GAPPS=true
 PROCESSOR_MODEL := sm8350
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -29,7 +27,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := xtended_vili
+PRODUCT_NAME := cherish_vili
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -38,3 +36,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "Xiaomi/vili/vili:12/RKQ1.211001.001/V13.0.21.0.SKDEUXM:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer= thatmalayali
+CHERISH_BUILD_TYPE := OFFICIAL
