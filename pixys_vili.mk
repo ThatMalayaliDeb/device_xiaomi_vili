@@ -14,9 +14,6 @@ $(call inherit-product, device/xiaomi/vili/device.mk)
 # Inherit some common Cherish stuff.
 $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
-#Inherit Pixel Launcher Extended
-$(call inherit-product, vendor/PixelLauncherExtended/PixelLauncher.mk)
-
 # Inherit some Cherish build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS=true
