@@ -53,3 +53,7 @@ PRODUCT_COPY_FILES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/vili/vili-vendor.mk)
+
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/Gcam/config.mk) 
+
