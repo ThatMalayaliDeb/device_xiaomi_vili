@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The CherishOS Project
+# Copyright (C) 2021 The BananaOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vili device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-# Inherit some common Cherish stuff.
-$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
+# Inherit some common Banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
-# Inherit some Cherish build stuff.
+# Inherit some Banana build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS=true
 PROCESSOR_MODEL := sm8350
@@ -27,7 +27,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := pixys_vili
+PRODUCT_NAME := banana_vili
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
