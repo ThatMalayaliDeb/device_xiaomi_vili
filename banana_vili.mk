@@ -16,7 +16,8 @@ $(call inherit-product, vendor/banana/config/common.mk)
 
 # Inherit some Banana build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS=false
+WITH_GAPPS=true
+TARGET_USE_GOOGLE_TELEPHONY := false
 PROCESSOR_MODEL := sm8350
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
