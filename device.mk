@@ -56,3 +56,6 @@ PRODUCT_COPY_FILES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/vili/vili-vendor.mk)
+
+# Call recorder
+$(call inherit-product, vendor/bcr/bcr.mk)
