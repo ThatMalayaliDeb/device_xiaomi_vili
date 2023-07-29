@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
 # Inherit some common Banana stuff.
-$(call inherit-product, vendor/banana/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Inherit some Banana build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -30,7 +30,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := banana_vili
+PRODUCT_NAME := aosp_vili
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
