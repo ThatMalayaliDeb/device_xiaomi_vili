@@ -38,4 +38,8 @@
     <!-- Fingerprint -->
     <dimen name="fingerprint_dot_radius">0dp</dimen>
     <dimen name="fingerprint_pulse_radius">0dp</dimen>
+    
+    <!-- PEX Maintainer -->
+    <string name="pex_maintainer_name" translatable="false">ThatMalayaliDeb</string>
+    <string name="pex_maintainer_group" translatable="false">https://t.me/thatmalayali</string>
 </resources>
