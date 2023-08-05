@@ -56,3 +56,6 @@ $(call inherit-product, vendor/xiaomi/vili/vili-vendor.mk)
 
 # Call recorder
 $(call inherit-product, vendor/bcr/bcr.mk)
+
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/gcam/config.mk) 
