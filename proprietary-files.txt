@@ -662,6 +662,9 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
+# Data - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/bin/netmgrd|4254e808131fa3a13aec1474bb769dbd539379ff
+
 # Display Calibration
 vendor/etc/ltm_config_xiaomi_42_08_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/ltm_config_xiaomi_42_08_0b_cmd_mode_dsc_dsi_panel.xml
