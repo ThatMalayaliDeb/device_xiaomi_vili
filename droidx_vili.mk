@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The BananaOS Project
+# Copyright (C) 2021 The DroidX Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,17 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vili device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-# Inherit some common Banana stuff.
+# Inherit some common DroidX stuff.
 $(call inherit-product, vendor/droidx/config/common.mk)
 
-# Inherit some Banana build stuff.
+# Inherit some Droidx build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS=true
 PROCESSOR_MODEL := sm8350
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
+DROIDX_BUILD_TYPE := OFFICIAL
+DROIDX_GAPPS := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
